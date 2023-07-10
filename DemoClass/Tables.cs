@@ -12,7 +12,7 @@ namespace DemoClass
         {
             Console.WriteLine("Enter the Table");
             int input=Convert.ToInt32(Console.ReadLine());
-            for(int i = 0; i < 10 ; i++) {
+            for(int i = 0; i <= 20 ; i++) {
                 Console.WriteLine(i * input);
                     }
         }
