@@ -1,6 +1,7 @@
 ﻿using DemoClass;
 using DemoOne;
 using ProblemSolving;
+using ProblemStatement2;
 
 internal class Program
 {
@@ -9,45 +10,67 @@ internal class Program
         bool flag = true;
         while (flag)
         {
-            Console.WriteLine("Enter input to output   \n1).Addition \n2).OddEven \n3).Factorial \n4).Tables"
-                + "\n5).Vowels \n6).Swaping \n7).flipCoin" + "\n8).LeapYear \n9).PowerOf2 \n10).Harmonic Number");
+            Console.WriteLine("Enter input to output   \n1).FlipCoin \n2).LeapYear \n3).PowerOf2 \n4).HarmoncNumber \n5).Factorial" +
+                                                      " \n6)Division \n7)Swaping \n8)OddEven\n9)Vowles\n10)LargestAmongThree");
+
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
-                case 1: 
-                    Addition add = new Addition();
-                    add.Add();
+                case 1:
+                    FlipCoin.Toss();
                     break;
                 case 2:
-                    OddEven.Fun();
+                    LeapYear obj = new LeapYear();
+                    obj.Year();
                     break;
                 case 3:
+                    PowerOf2.Power();
+                    break;
+                case 4:
+                    HarmoncNumber harmoncNumber = new HarmoncNumber();
+                    harmoncNumber.Harmonic();
+                    break;
+                case 5:
                     Factorial.Fact();
+                    break;
+                case 6:
+                    Division.divide();
+                    break;
+                case 7:
+                    Swaping.swap();
+                    break;
+                case 8:
+                    OddEven.Fun();
+                    break;
+                case 9:
+                    Vowles.vow();
+                    break;
+                case 10:
+                    LargestAmongThree.Largest();
+                    break;
+
+
+
+
+
+
+               /* case 1: 
+                    Addition add = new Addition();
+                    add.Add();
                     break;
 
                 case 4:
                     Tables.Table();
                     break;
-                case 5:
-                    Vowles.vow();
-                    break;
-                case 6:
-                    Swaping.swap();
-                    break;
-                case 7:
-                    FlipCoin.Toss();
-                    break;
-                case 8:
-                    LeapYear obj = new LeapYear();
-                    obj.Year();
-                    break;
-                case 9:
-                    PowerOf2.Power();
-                    break;
-                case 10:
-                    HarmoncNumber harmoncNumber = new HarmoncNumber();
-                    harmoncNumber.Harmonic();
-                    break;
+               */
+
+                
+
+                
+
+
+
+                
 
 
 
@@ -60,12 +83,5 @@ internal class Program
 
 
 
-
-
-
-
-
-//Tables.Table();
-//Vowles.vow();
 
 
