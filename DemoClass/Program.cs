@@ -50,29 +50,7 @@ internal class Program
                     break;
 
 
-
-
-
-
-               /* case 1: 
-                    Addition add = new Addition();
-                    add.Add();
-                    break;
-
-                case 4:
-                    Tables.Table();
-                    break;
-               */
-
-                
-
-                
-
-
-
-                
-
-
+          
 
             }
         }
